@@ -22,4 +22,10 @@ class MyExamplesController < ApplicationController
     render json: {message: "Your lotto numbers are #{lotto_number}"}
   end
 
+  def visit_counter
+  # Feature 3: Every time a user visits/refreshes the page, the page should tell the user the number of visits made to that page so far. NOTE: # This is impossible, but you should try your hand at this for a few minutes to discover why it’s impossible.
+    counter = 0
+    render json: {message: "gonna be a great counter here"}
+  end
+
 end
