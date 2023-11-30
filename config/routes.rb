@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/hello", controller: "example_pages", action: "hello_method"
   get "/weather", controller: "example_pages", action: "weather"
+  get "/fortune", controller: "my_examples", action: "fortune_method"
 end

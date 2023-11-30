@@ -5,10 +5,8 @@ class ExamplePagesController < ApplicationController
   end
 
   def weather
-    render json: {message:
-      return "what city:"
-      city = gets.chomp
-    }
+    # ruby stuff here
+    render json: {message:}
   end
 
 end
