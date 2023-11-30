@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/hello", controller: "example_pages", action: "hello_method"
   get "/weather", controller: "example_pages", action: "weather"
   get "/fortune", controller: "my_examples", action: "fortune_method"
+  get "/lotto", controller: "my_examples", action: "lotto_method"
 end

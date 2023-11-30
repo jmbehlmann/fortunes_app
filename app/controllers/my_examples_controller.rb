@@ -12,4 +12,14 @@ class MyExamplesController < ApplicationController
     render json: {message: fortune}
   end
 
+  def lotto_method
+    number = 0
+    lotto_number = []
+    6.times do
+      number = (rand(59) + 1)
+      lotto_number << number
+    end
+    render json: {message: "Your lotto numbers are #{lotto_number}"}
+  end
+
 end
