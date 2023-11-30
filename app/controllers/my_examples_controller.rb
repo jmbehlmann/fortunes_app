@@ -16,10 +16,12 @@ class MyExamplesController < ApplicationController
     number = 0
     lotto_number = []
     6.times do
-      number = (rand(59) + 1)
+      number = (rand(1..60)
       lotto_number << number
     end
-    render json: {message: "Your lotto numbers are #{lotto_number}"}
+    render json: {
+      message: "Your lotto numbers are #{lotto_number}"
+    }
   end
 
   def visit_counter
